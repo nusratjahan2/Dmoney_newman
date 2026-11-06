@@ -57,27 +57,6 @@ The results appear in the terminal, and the HTML report is saved to `Report/repo
 
 To send requests one at a time, start with **Admin login**, because it creates the `run_id` used by later requests.
 
-### Running more than once
-
-Each run generates a new `run_id` and adds it to the user details, such as `test-agent-2774547@gmail.com`. This keeps each run's emails and phone numbers unique, so the collection can run repeatedly on the same database. Every run adds 4 new users and their transactions to the database.
-
-## Negative test cases
-
-| Folder | Test | Expected status |
-|---|---|---|
-| `setup` | Register with an existing email | 208 |
-| `Agent` | Deposit below the minimum (5 tk) | 400 |
-| `Agent` | Deposit above the maximum (10001 tk) | 400 |
-| `Agent` | Deposit to an account that does not exist | 404 |
-| `Customer` | Log in with the wrong password | 401 |
-| `Customer` | Send money without a token | 401 |
-| `Customer` | Cash out from another customer's account | 403 |
-| `Customer` | Cash out above the daily limit (50000 tk) | 400 |
-| `Customer` | Pay a merchant with insufficient balance | 208 |
-| `Customer` | Pay a merchant that does not exist | 404 |
-| `Customer` | Pay an account that is not a merchant | 400 |
-| `Merchant` | Log in with the wrong password | 401 |
-
 ## Test results
 
 Latest run against the local API on 6 November 2026:
