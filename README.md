@@ -2,18 +2,6 @@
 
 API test automation for Dmoney, a mobile financial service API. A Postman collection runs a complete money flow between a system account, an agent, two customers and a merchant, then checks commissions, service fees and error handling. Newman runs the collection and creates an HTML report.
 
-## Test flow
-
-| Step | Action | Check |
-|---|---|---|
-| 1 | Create 2 customers, 1 agent and 1 merchant | Each user is created with `pending` status |
-| 2 | Activate all users with the admin API | Each user has `active` status |
-| 3 | System account deposits 5000 tk to the agent | Deposit succeeds |
-| 4 | Agent deposits 2000 tk to customer 1 | Commission is 50 tk |
-| 5 | Customer 1 sends 1000 tk to customer 2 | Service fee is 5 tk |
-| 6 | Customer 2 cashes out 500 tk from the agent | Service fee is 5 tk |
-| 7 | Customer 2 pays 400 tk to the merchant | Payment succeeds and the fee is 5 tk |
-
 ## Tools
 
 - Postman
