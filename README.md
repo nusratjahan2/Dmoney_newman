@@ -69,3 +69,7 @@ Values returned by the API in that run:
 
 ## API Documentation
 https://documenter.getpostman.com/view/40420353/2sBYHYtxX1
+
+## Attachment
+<img width="692" height="792" alt="Screenshot 2026-11-06 231610" src="https://github.com/user-attachments/assets/2e019df3-fb8c-4e86-89b9-28c768ffe8e2" />
+
