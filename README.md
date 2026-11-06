@@ -67,12 +67,5 @@ Latest run against the local API on 6 November 2026:
 
 Values returned by the API in that run:
 
-| Transaction | Amount | Commission or fee | Balance after transaction |
-|---|---|---|---|
-| Agent deposit to customer 1 | 2000 tk | 50 tk commission | Agent: 3050 tk |
-| Send money | 1000 tk | 5 tk fee | Customer 1: 995 tk |
-| Cashout | 500 tk | 5 tk fee | Customer 2: 495 tk |
-| Merchant payment | 400 tk | 5 tk fee | Customer 2: 90 tk |
-
 ## API Documentation
 https://documenter.getpostman.com/view/40420353/2sBYHYtxX1
