@@ -2,6 +2,8 @@
 
 API test automation for Dmoney, a mobile financial service API. A Postman collection runs a complete money flow between a system account, an agent, two customers and a merchant, then checks commissions, service fees and error handling. Newman runs the collection and creates an HTML report.
 
+**Postman collection:** [Dmoney-flow.postman_collection.json](Dmoney-flow.postman_collection.json)
+
 ## Tools
 
 - Postman
